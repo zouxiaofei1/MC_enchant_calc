@@ -56,8 +56,8 @@ void update(mmap& out, const int lft, const mmap& ml, const int rt, const mmap& 
 int main() {
 	while (~scanf("%d", &n) && n) {	
 		for (int i = 0; i < (1<<k_maxn); i++) {
-      dp[i][1].clear(); dp[i][0].clear(); // clear() 怎么不执行析构呀，内存泄露喽
-    }
+			dp[i][1].clear(); dp[i][0].clear(); // clear() 怎么不执行析构呀，内存泄露喽
+    		}
 		for (int i = 2; i <= n; i++) { a[i].clear(); }
 		for (int i = 1; i < (1<<n); ++i) {
 			if (BITCOUNT(i) == 1) {
